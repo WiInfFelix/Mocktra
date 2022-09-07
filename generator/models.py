@@ -1,4 +1,12 @@
 from dataclasses import dataclass
+from enum import Enum
+
+
+class Item_Category(Enum):
+    ALCOHOL = 1
+    FOOD = 2
+    HYGIENE = 3
+
 
 @dataclass
 class Item:
@@ -6,6 +14,7 @@ class Item:
     id: int
     name: str
     value: float
+    category: Item_Category
 
 
 @dataclass

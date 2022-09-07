@@ -1,4 +1,5 @@
-
+from interface.terminal_ui import TestApp
 
 if __name__ == "__main__":
-    print("Hello World")
+    t = TestApp()
+    t.run()
